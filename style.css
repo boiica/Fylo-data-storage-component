@@ -1,4 +1,49 @@
- <style>
+/*
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
- </style>
+*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family:'Raleway',sans-serif;
+	font-size: 0.875rem;
+	color: #fff;
+}
+html { font-size: 100%; }
+body{
+	
+}
+
+main{
+	margin:auto;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(13,1fr); 
+	/*grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));*/
+	column-gap: 1.250em;
+	max-width: 102.857em;
+	background: hsl(229, 57%, 11%) url("./images/bg-desktop.svg") no-repeat center bottom/contain;
+	
+	
+}
+section{
+	align-self: center;
+	background-color: hsl(228, 56%, 26%); 
+}
+
+.left{
+	display:grid;
+	grid-column: 3 / span 3;
+	padding:1.563em;
+	height: 160px;
+}
+
+.icons img{
+	padding: 15px;
+	background-color: hsl(229, 57%, 11%);
+}
+.right{
+	grid-column: 6 / span 5;
+}
