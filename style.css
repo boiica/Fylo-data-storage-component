@@ -32,6 +32,9 @@ section{
 	align-self: center;
 	background-color: hsl(228, 56%, 26%); 
 }
+.logo{
+	margin: 1rem 0;
+}
 
 .left{
 	display:grid;
@@ -40,10 +43,32 @@ section{
 	height: 160px;
 }
 
-.icons img{
+.icons{
+	display:grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 0.9225rem;
+	
+}
+.document{
+	background: hsl(229, 57%, 11%) url("./images/icon-document.svg") no-repeat center;
+	height: 3.125rem;
+	width:3.125rem;
+}
+.folder{
+	background: hsl(229, 57%, 11%) url("./images/icon-folder.svg") no-repeat center;
+
+	height: 3.125rem;
+	width:3.125rem;
+}
+.upload{
+	background: hsl(229, 57%, 11%) url("./images/icon-upload.svg") no-repeat center;
+	height: 3.125rem;
+	width:3.125rem;
+}
+/*.icons img{
 	padding: 15px;
 	background-color: hsl(229, 57%, 11%);
-}
+}*/
 .right{
 	grid-column: 6 / span 5;
 }
