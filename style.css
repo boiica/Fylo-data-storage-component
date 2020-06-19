@@ -17,18 +17,23 @@ body{
 }
 
 main{
-	margin:auto;
-	height: 100vh;
 	display: grid;
-	grid-template-columns: repeat(13,1fr); 
-	/*grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));*/
+	grid-template-columns: repeat(auto-fit, minmax(345px, auto));
 	column-gap: 1.250em;
-	max-width: 102.857em;
+	height: 100vh;
+	/*grid-template-columns: repeat(13,1fr); */
+	max-width: 102.857em; /* 1440px */
 	background: hsl(229, 57%, 11%) url("./images/bg-desktop.svg") no-repeat center bottom/contain;
-	
-	
+	place-items: center;
 }
+
+content{
+
+
+}
+
 section{
+	width: 100%;
 	align-self: center;
 	background-color: hsl(228, 56%, 26%); 
 }
@@ -38,7 +43,7 @@ section{
 
 .left{
 	display:grid;
-	grid-column: 3 / span 3;
+	/*grid-column: 3 / span 3;*/
 	padding:1.563em;
 	height: 160px;
 }
@@ -70,5 +75,5 @@ section{
 	background-color: hsl(229, 57%, 11%);
 }*/
 .right{
-	grid-column: 6 / span 5;
+	/*grid-column: 6 / span 5;*/
 }
